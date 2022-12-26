@@ -26,7 +26,7 @@ const Navbar = ({index}) => {
                                 <Link href="/"> <h1>Sami EL MHAMEDI</h1></Link>
                             </div>
                             <div className='grow hidden md:flex justify-center'>
-                                <Tabs isFittted defaultIndex={index} colorScheme="purple" align='center'>
+                                <Tabs  defaultIndex={index} colorScheme="purple" align='center'>
                                     <TabList mb='1em' >
                                         <Link href="/Works"> <Tab>Works</Tab> </Link>
                                         <Link href="/Experiences"> <Tab>Experiences</Tab> </Link>

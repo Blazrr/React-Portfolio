@@ -9,9 +9,9 @@ const About = () => {
 
         <AnimatePresence>
         <motion.div className='w-4/5 mx-auto'
-         initial={{ opacity: 0, y:-400 }}
-         animate={{ opacity: 1 ,y:0}}
-         exit={{ opacity: 0,y:400 }}
+         initial={{ opacity: 0 }}
+         animate={{ opacity: 1 }}
+         exit={{ opacity: 0}}
          transition={{duration: 0.4 }}
         >
             <Navbar index={-2} />

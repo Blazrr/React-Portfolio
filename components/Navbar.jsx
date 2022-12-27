@@ -7,7 +7,7 @@ import {
 } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
-
+import {FaMoon,FaSun} from "react-icons/fa"
 
 
 const Navbar = ({index}) => {
@@ -23,7 +23,7 @@ const Navbar = ({index}) => {
                         <div className=" pt-4 justify-between fixed top-0 w-full space-x-8 items-center pl-[10%] pr-[10%] left-50 inset-x-0 mx-auto backdrop-blur-sm flex z-20 "
                             >
                             <div >
-                                <Link href="/"> <h1>Sami EL MHAMEDI</h1></Link>
+                                <Link href="/"> <h1 className='underline font-semibold text-xl'>HOME</h1></Link>
                             </div>
                             <div className='grow hidden md:flex justify-center'>
                                 <Tabs  defaultIndex={index} colorScheme="purple" align='center'>
@@ -48,7 +48,7 @@ const Navbar = ({index}) => {
                                 </Menu>
                             </div>
                             <div>
-                                <Button colorScheme="pink" onClick={toggleColorMode}  > Switch to {colorMode === 'light' ? 'Dark' : 'Light'} </Button>
+                                <Button colorScheme="pink" onClick={toggleColorMode}  >  {colorMode === 'light' ? <FaMoon/> : <FaSun/>} </Button>
                             </div>
                         </div>
 

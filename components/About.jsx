@@ -6,7 +6,8 @@ import { AnimatePresence, motion } from 'framer-motion'
 
 const About = () => {
     return (
-
+<>
+<Navbar index={-2} />
         <AnimatePresence>
         <motion.div className='w-4/5 mx-auto'
          initial={{ opacity: 0 }}
@@ -14,7 +15,7 @@ const About = () => {
          exit={{ opacity: 0}}
          transition={{duration: 0.4 }}
         >
-            <Navbar index={-2} />
+       
 
             <div className='flex items-center justify-center'>
                 <h2 className=' px-8 md:text-2xl rounded py-4 backdrop-blur-md backdrop-brightness-95 hover:backdrop-brightness-150 transition-all ease-in duration-75'> Currently looking for a job</h2>
@@ -103,6 +104,7 @@ const About = () => {
             </div>
         </motion.div>
        </AnimatePresence>
+       </>
     )
 }
 

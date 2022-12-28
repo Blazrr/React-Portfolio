@@ -16,10 +16,11 @@ const About = () => {
                     transition={{ duration: 0.4 }}
                 >
 
-
-                    <div className='flex items-center justify-center'>
+                    
+                    <h1 className='flex items-center justify-center'>
                         <Code className='text-2xl' fontSize='2xl' colorScheme="purple" px="5" py="2">Currently looking for a job</Code>
-                    </div>
+                    </h1>
+                    
 
                     <div className='mt-8 mx-auto flex justify-center flex-col max-w-xl'>
                         <h3 className='  decoration-2'>About me</h3>

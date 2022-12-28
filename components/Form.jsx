@@ -30,15 +30,15 @@ const Form = () => {
    <>   {!sent ?
         <section>
             <div className='max-w-[700px] mx-auto'>
-                <h2 className='text-center text-2xl md:text-3xl underline'>Contact Form</h2>
-                <form action="" className='flex  flex-col space-y-8' ref={form} onSubmit={sendEmail}>
+                <h2 className='text-center text-xl underline underline-offset-4 font-bold  md:text-4xl'>Contact Form</h2>
+                <form action="" className='flex  flex-col space-y-8' ref={form}  >
                     <FormControl >
                         <FormLabel>Your Name</FormLabel>
-                        <Input placeholder='First name' name='user_name' />
+                        <Input placeholder='First name' name='user_name' borderColor='purple.400' />
                     </FormControl>
                     <FormControl isInvalid={isError} isRequired>
                         <FormLabel>Email</FormLabel>
-                        <Input type='email' value={input} onChange={handleInputChange} name="user_email" />
+                        <Input type='email' value={input} onChange={handleInputChange} name="user_email" borderColor='purple.400'  />
                         {!isError ? (
                             <FormHelperText>
                                 Enter the email you'd like to send your email with.
@@ -48,10 +48,10 @@ const Form = () => {
                         )}
                     </FormControl>
                     <FormControl isRequired>
-                    <Textarea  placeholder='Enter your message' name='message' />
+                    <Textarea  placeholder='Enter your message' name='message' borderColor='purple.400' />
                     </FormControl>
                     <div className='flex justify-center'>
-                    <Button colorScheme='facebook'>Send your Email</Button>
+                    <Button colorScheme='facebook' onClick={sendEmail}>Send your Email</Button>
                     </div>
                 </form>
             </div>

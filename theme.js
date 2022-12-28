@@ -9,6 +9,7 @@ import { mode } from "@chakra-ui/theme-tools";
 const config = {
   initialColorMode: 'dark',
   useSystemColorMode: true,
+  disableTransitionOnChange: false
 }
 
 // 3. extend the theme
@@ -17,10 +18,14 @@ const theme = extendTheme({
   styles: {
     global: (props) => ({
       body: {
-        bg: mode("#9394a5","#202023")(props),
+        bg: mode("white","#202023")(props),
+      
+        transitionProperty: "all",
+        transitionDuration: "normal"
       }
     })
   },
+
 })
 
 export default theme

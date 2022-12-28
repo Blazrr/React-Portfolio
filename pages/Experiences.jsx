@@ -1,3 +1,4 @@
+import { AnimatePresence,motion } from 'framer-motion'
 import Head from 'next/head'
 import React from 'react'
 import Navbar from '../components/Navbar'
@@ -12,6 +13,11 @@ const Experiences = () => {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
         <Navbar index={1}/>
+        <AnimatePresence>
+        <motion.div
+        initial={{ opacity: 0 }}
+        animate={{ opacity: 1 }}
+        exit={{ opacity: 0 }}>
         <h1 className='text-center text-xl underline underline-offset-4 font-bold  md:text-4xl'> Experiences</h1>
         <div className='mt-12 w-4/5 mx-auto max-w-[768px]'>
             <div className='flex flex-col space-x-4'>
@@ -19,7 +25,7 @@ const Experiences = () => {
                 <div className='flex flex-col mt-2 md:mt-4'>
                     <h4 className='font-bold md:text-xl'>Operations Technician OPEN/MAINFRAME</h4>
                     <h5 className='mt-2 font-semibold md:text-lg'>DCS Easyware</h5>
-                    <p className='mt-4 md:text-lg'>Discovered new technical skills like Mainframe and worked with CAGIP.  Designed and developed a small portal with a co-worker to help the team with work management .</p>
+                    <p className='mt-4 md:text-lg'>Discovered new technical skills like Mainframe and worked with CAGIP.Designed and developed a small portal with a co-worker to help the team with work management .</p>
                 </div>
             </div>
 
@@ -41,7 +47,10 @@ const Experiences = () => {
                 </div>
             </div>
         </div>
+        </motion.div>
+        </AnimatePresence>
     </div>
+
   )
 }
 

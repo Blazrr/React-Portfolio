@@ -23,7 +23,7 @@ const About = () => {
 
             <div className='mt-8 mx-auto flex justify-center flex-col max-w-xl'>
                 <h3 className='underline underline-offset-4 font-semibold decoration-2'>About me</h3>
-                <p className='mt-4'>Hi Im Sami, a French Front-End developer. After an experience as an operations technician, I'm directing my career in development. My assets and knowledge in this field are reinforced by my current training in development with ReactJS .</p>
+                <p className='mt-4'>Hi Im Sami, a French Front-End developer. After an experience as an operations technician, I&apos;m directing my career in development. My assets and knowledge in this field are reinforced by my current training in development with ReactJS .</p>
 
             </div>
 

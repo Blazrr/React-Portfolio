@@ -47,7 +47,7 @@ const Navbar = ({ index }) => {
                     </Menu>
                 </div>
                 <div className='flex  space-x-4 items-center w-[200px] justify-end'>
-                    <a href='https://github.com/Blazrr/React-Portfolio' target="_blank" className='flex items-center space-x-2'>
+                    <a href='https://github.com/Blazrr/React-Portfolio' target="_blank" rel="noreferrer"  className='flex items-center space-x-2'>
                         <FaGithub /> <p className='hidden lg:block'>Source code</p> <FaExternalLinkAlt />
                     </a>
                     <Button colorScheme="purple" onClick={toggleColorMode}  >  {colorMode === 'light' ? <FaMoon /> : <FaSun />} </Button>

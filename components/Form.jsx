@@ -42,7 +42,7 @@ const Form = () => {
                         <Input type='email' value={input} onChange={handleInputChange} name="user_email" borderColor='purple.400'  />
                         {!isError ? (
                             <FormHelperText>
-                                Enter the email you'd like to send your email with.
+                                Enter the email you&apos;d like to send your email with.
                             </FormHelperText>
                         ) : (
                             <FormErrorMessage>Email is required.</FormErrorMessage>

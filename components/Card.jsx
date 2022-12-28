@@ -13,7 +13,7 @@ const Card = ({element}) => {
             <div className='flex mt-2 space-x-2'>
                 {element.techno.map((item,id) => {
                     return(
-                        <a className='w-[50px] h-[50px] relative ' href={item.link} target="_blank" key={id}>
+                        <a className='w-[50px] h-[50px] relative ' href={item.link}  rel="noreferrer" target="_blank" key={id}>
             <Image src={item.img} width={800} height={800}  className="rounded-[50%] absolute" alt='qui va la' />
             </a>
                     )
@@ -24,8 +24,8 @@ const Card = ({element}) => {
             <Divider className='mt-2' />
           
             <div className='flex space-x-8 mt-4'>
-            <a href={element.link} target="_blank"> <Button colorScheme='blue'>Website</Button></a>
-             <a href={element.source} target="_blank"><Button colorScheme='blue' >Source Code</Button></a>
+            <a href={element.link} target="_blank"  rel="noreferrer"> <Button colorScheme='blue'>Website</Button></a>
+             <a href={element.source} target="_blank"  rel="noreferrer"><Button colorScheme='blue' >Source Code</Button></a>
             </div>
 
         </Box>

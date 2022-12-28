@@ -1,6 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
-import { Link } from '@chakra-ui/react'
+import { Link,Code } from '@chakra-ui/react'
 import {FaGithub, FaLinkedin, FaExternalLinkAlt} from "react-icons/fa"
 import { AnimatePresence, motion } from 'framer-motion'
 
@@ -18,12 +18,12 @@ const About = () => {
        
 
             <div className='flex items-center justify-center'>
-                <h2 className=' px-8 md:text-2xl rounded py-4 backdrop-blur-md backdrop-brightness-95 hover:backdrop-brightness-150 transition-all ease-in duration-75'> Currently looking for a job</h2>
+            <Code className='text-2xl' fontSize='xl' colorScheme="purple" px="5" py="2">Currently looking for a job</Code>
             </div>
 
             <div className='mt-8 mx-auto flex justify-center flex-col max-w-xl'>
                 <h3 className='underline underline-offset-4 font-semibold decoration-2'>About me</h3>
-                <p className='mt-4'>Hi Im Sami. After an experience as an operations technician, I'm directing my career in development. My assets and knowledge in this field are reinforced by my current training in development with ReactJS .</p>
+                <p className='mt-4'>Hi Im Sami, a French Front-End developer. After an experience as an operations technician, I'm directing my career in development. My assets and knowledge in this field are reinforced by my current training in development with ReactJS .</p>
 
             </div>
 

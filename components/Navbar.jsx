@@ -39,9 +39,9 @@ const Navbar = ({ index }) => {
                             Menu
                         </MenuButton>
                         <MenuList>
-                            <MenuItem>Works</MenuItem>
-                            <MenuItem>Experiences</MenuItem>
-                            <MenuItem>Contact</MenuItem>
+                            <Link href="/Works"><MenuItem>Works</MenuItem> </Link>
+                            <Link href="/Experiences"> <MenuItem>Experiences</MenuItem> </Link>
+                            <Link href="/Contact"> <MenuItem>Contact</MenuItem> </Link>
                         </MenuList>
                     </Menu>
                 </div>

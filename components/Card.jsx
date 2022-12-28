@@ -4,7 +4,7 @@ import {  Divider,Box, Button  } from '@chakra-ui/react'
 
 const Card = ({element}) => {
     return (
-        <Box className='flex   rounded p-4 mt-8 relative  flex-col max-w-[600px]' borderWidth='1px'>
+        <Box className='flex   rounded p-4 mt-8 relative  flex-col max-w-[600px]' borderWidth='1px' borderColor='purple.400'>
             <Image src={element.img} width={800} height={800} className="rounded" alt='qui va la' />
             <h2 className="mt-4 font-bold text-xl underline ">{element.project}</h2>
             <p className='mt-2'>{element.about}

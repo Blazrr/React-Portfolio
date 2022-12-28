@@ -18,7 +18,7 @@ const About = () => {
        
 
             <div className='flex items-center justify-center'>
-            <Code className='text-2xl' fontSize='xl' colorScheme="purple" px="5" py="2">Currently looking for a job</Code>
+            <Code className='text-2xl' fontSize='2xl' colorScheme="purple" px="5" py="2">Currently looking for a job</Code>
             </div>
 
             <div className='mt-8 mx-auto flex justify-center flex-col max-w-xl'>
@@ -67,7 +67,7 @@ const About = () => {
 
             <div className='mt-8 mx-auto flex justify-center flex-col max-w-xl'>
                 <h3 className='underline underline-offset-4 font-semibold decoration-2'>Socials</h3>
-                <Link href='https://www.linkedin.com/in/sami-el-mhamedi-8284621b4/' isExternal className='mt-6 flex items-center space-x-2'>
+                <Link href='https://www.linkedin.com/in/sami-el-mhamedi-8284621b4/'  className='mt-6 flex items-center space-x-2'>
                 <FaLinkedin/> <p>My linkedin</p> <FaExternalLinkAlt />
                 </Link>
 

@@ -4,10 +4,11 @@ import {
     MenuList,
     MenuItem,
 
+
 } from '@chakra-ui/react'
 import Link from 'next/link'
 import React from 'react'
-import { FaMoon, FaSun } from "react-icons/fa"
+import { FaMoon, FaSun, FaGithub, FaExternalLinkAlt } from "react-icons/fa"
 
 
 const Navbar = ({ index }) => {
@@ -18,12 +19,12 @@ const Navbar = ({ index }) => {
 
     return (
         <>
-            <div className=" pt-4 justify-between fixed top-0 w-full space-x-8 items-center pl-[10%] pr-[10%] left-50 inset-x-0 mx-auto backdrop-blur-sm flex z-20 "
+            <div className=" pt-4  fixed top-0 w-full space-x-8 items-center pl-[10%] pr-[10%]  inset-x-0  backdrop-blur-sm  z-20 flex justify-between  "
             >
-                <div >
+                <div className='w-[200px]'>
                     <Link href="/"> <h1 className='underline font-semibold text-xl'>HOME</h1></Link>
                 </div>
-                <div className='grow hidden md:flex justify-center'>
+                <div className=' hidden md:flex mx-auto '>
                     <Tabs defaultIndex={index} colorScheme="purple" align='center'>
                         <TabList mb='1em' >
                             <Link href="/Works"> <Tab>Works</Tab> </Link>
@@ -33,7 +34,7 @@ const Navbar = ({ index }) => {
 
                     </Tabs>
                 </div>
-                <div className="md:hidden">
+                <div className="md:hidden text-center">
                     <Menu >
                         <MenuButton as={Button} colorScheme="purple" >
                             Menu
@@ -45,7 +46,10 @@ const Navbar = ({ index }) => {
                         </MenuList>
                     </Menu>
                 </div>
-                <div>
+                <div className='flex  space-x-4 items-center w-[200px] justify-end'>
+                    <a href='https://github.com/Blazrr/React-Portfolio' target="_blank" className='flex items-center space-x-2'>
+                        <FaGithub /> <p className='hidden lg:block'>Source code</p> <FaExternalLinkAlt />
+                    </a>
                     <Button colorScheme="purple" onClick={toggleColorMode}  >  {colorMode === 'light' ? <FaMoon /> : <FaSun />} </Button>
                 </div>
             </div>

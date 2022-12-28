@@ -2,7 +2,7 @@ import {
     FormControl,
     FormLabel,
     FormErrorMessage,
-    FormHelperText, Input,Textarea ,Button
+    FormHelperText, Input,Textarea ,Button,Box
 } from '@chakra-ui/react'
 import { useRef, useState } from 'react'
 import emailjs from "@emailjs/browser"
@@ -31,6 +31,7 @@ const Form = () => {
         <section>
             <div className='max-w-[700px] mx-auto'>
                 <h2 className='text-center text-xl underline underline-offset-4 font-bold  md:text-4xl'>Contact Form</h2>
+                <Box  w='100%' p={8} borderWidth='1px' borderColor='purple.400' mt="4em" borderRadius='lg' >
                 <form action="" className='flex  flex-col space-y-8' ref={form}  >
                     <FormControl >
                         <FormLabel>Your Name</FormLabel>
@@ -54,6 +55,7 @@ const Form = () => {
                     <Button colorScheme='facebook' onClick={sendEmail}>Send your Email</Button>
                     </div>
                 </form>
+                </Box>
             </div>
         </section>
          :

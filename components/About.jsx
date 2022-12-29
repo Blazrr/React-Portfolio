@@ -18,14 +18,15 @@ const About = () => {
 
                     
                     <h1 className='flex items-center justify-center'>
-                        <Code className='text-2xl' fontSize='2xl' colorScheme="purple" px="5" py="2">Currently looking for a job</Code>
+                        <Code className='text-2xl' fontSize='2xl' colorScheme="purple" px="5" py="2">Currently open to new opportunities</Code>
                     </h1>
                     
 
                     <div className='mt-8 mx-auto flex justify-center flex-col max-w-xl'>
                         <h3 className='  decoration-2'>About me</h3>
                         <Divider borderColor='purple.500' />
-                        <p className='mt-4'>Hi I&apos;m Sami, a French Front-End developer. After an experience as an operations technician, I&apos;m directing my career in development. My assets and knowledge in this field are reinforced by my current training in development with ReactJS .</p>
+                        <p className='mt-4'>
+                        Hi, I&apos;m Sami ! I&apos;m a front-end developer based in Paris . After working as an operations technician, i&apos;ve decided to change my career path and specialize in web development. My passion for creative and innovative web applications helps me thrive along the way. I&apos;m currently specialized in ReactJS and plan on expanding my knowledge with different frameworks.</p>
 
                     </div>
 
@@ -35,28 +36,28 @@ const About = () => {
 
                         <div className='flex mt-6'>
                             <h4 className='font-bold '>Languages</h4>
-                            <Center height='25px' ml={4}  >
-                                <Divider orientation='vertical'  borderColor='purple.500'   />
+                            <Center height='screen' ml={4}  >
+                                <Divider orientation='vertical'  borderColor='purple.500'    />
                             </Center>
                             <p className='ml-4 '>Python, Javascript, Typescript</p>
                         </div>
                         <div className='flex mt-4'>
                             <h4 className='font-bold'>Frameworks and Libraries</h4>
-                            <Center height='25px' ml={4}  >
+                            <Center height='screen' ml={4}  >
                                 <Divider orientation='vertical'  borderColor='purple.500'   />
                             </Center>
-                            <p className='ml-4 '>React, NextJS, NodeJS</p>
+                            <p className='ml-4'>React, NextJS, NodeJS</p>
                         </div>
                         <div className='flex mt-4'>
                             <h4 className='font-bold'>Styling and Components</h4>
-                            <Center height='25px' ml={4}  >
+                            <Center height='screen' ml={4}  >
                                 <Divider orientation='vertical'  borderColor='purple.500'   />
                             </Center>
                             <p className='ml-4 '>TailwindCSS, ChakraUI, Bootstrap (S)CSS</p>
                         </div>
                         <div className='flex mt-4'>
                             <h4 className='font-bold'>Others</h4>
-                            <Center height='25px' ml={4}  >
+                            <Center height='screen' ml={4}  >
                                 <Divider orientation='vertical'  borderColor='purple.500'   />
                             </Center>
                             <p className='ml-4 '>Git, Figma, Unix</p>
@@ -88,7 +89,7 @@ const About = () => {
                             <FaLinkedin /> <p>My linkedin</p> <FaExternalLinkAlt />
                         </Link>
 
-                        <Link href='https://chakra-ui.com' isExternal className='mt-4 flex items-center space-x-2'>
+                        <Link href='https://github.com/Blazrr' isExternal className='mt-4 flex items-center space-x-2'>
                             <FaGithub /> <p>https://github.com/Blazrr</p> <FaExternalLinkAlt />
                         </Link>
                     </div>

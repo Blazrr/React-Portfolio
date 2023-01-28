@@ -12,7 +12,9 @@ const Form = () => {
     const form = useRef()
     const sendEmail = (e) => {
         e.preventDefault();
+        if (input.match(/^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/) ){
 
+       
         emailjs.sendForm('service_be9wjcc', 'template_pvic6tb', form.current, 'eZkX0TG4owgXU1lb-')
             .then((result) => {
                 console.log(result.text);
@@ -20,6 +22,7 @@ const Form = () => {
             }, (error) => {
                 console.log(error.text);
             });
+        }
     };
     const [input, setInput] = useState('')
     const handleInputChange = (e) => setInput(e.target.value)

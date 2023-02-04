@@ -51,9 +51,9 @@ export const data = [
   {
     project: "Audiophile",
     about:
-      "Started this project to learn more about page routing with DynamicRoutes and Global States in a ReactApp",
+      "Started this project to learn more about databases (with supabase) page routing with DynamicRoutes and Global States in a ReactApp",
     img: "/Audiophile.png",
-    techno: [React, tailwind, Typescript, ReactRouter, Redux],
+    techno: [React, tailwind, Typescript, ReactRouter, Redux, Supabase],
     source: "https://github.com/Blazrr/audiophile",
     link: "https://delicate-banoffee-9c017c.netlify.app/",
   },

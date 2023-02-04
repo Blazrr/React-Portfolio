@@ -9,7 +9,8 @@ module.exports = {
       "encrypted-tbn0.gstatic.com",
       "avatars.githubusercontent.com",
       "reactrouter.com",
-      "infiniteblogs.blob.core.windows.net"
+      "infiniteblogs.blob.core.windows.net",
+      "d2eip9sf3oo6c2.cloudfront.net"
     ],
   },
 };

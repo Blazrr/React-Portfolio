@@ -35,13 +35,23 @@ const VueJS = {
   img: "https://avatars.githubusercontent.com/u/6128107?s=280&v=4",
   link: "https://vuejs.org/",
 };
-
-
+const Supabase = {
+  img: "https://d2eip9sf3oo6c2.cloudfront.net/tags/images/000/001/299/square_480/supabase-logo-icon_1.png",
+  link: "https://supabase.com/",
+};
 
 export const data = [
-   {
+  {
+    project: "Netflim",
+    about:
+      "Started this project to learn more about Backend with supabase, This project is still in Build but can be shown if requested",
+    img: "/Netflim.png",
+    techno: [React, Redux, ReactRouter, Supabase],
+  },
+  {
     project: "Audiophile",
-    about: "Started this project to learn more about page routing with DynamicRoutes and Global States in a ReactApp",
+    about:
+      "Started this project to learn more about page routing with DynamicRoutes and Global States in a ReactApp",
     img: "/Audiophile.png",
     techno: [React, tailwind, Typescript, ReactRouter, Redux],
     source: "https://github.com/Blazrr/audiophile",
@@ -76,7 +86,8 @@ export const data = [
   },
   {
     project: "SneakersVue",
-    about: "Started this project to Discover VueJS and make myself a little documentation in order to be able to understand the FrameWork",
+    about:
+      "Started this project to Discover VueJS and make myself a little documentation in order to be able to understand the FrameWork",
     img: "/SneakersVue.png",
     techno: [VueJS, tailwind],
     source: "https://github.com/Blazrr/SneakersVue",

@@ -55,7 +55,7 @@ export const data = [
     img: "/Audiophile.png",
     techno: [React, tailwind, Typescript, ReactRouter, Redux, Supabase],
     source: "https://github.com/Blazrr/audiophile",
-    link: "audiophile-pied.vercel.app",
+    link: "https://audiophile-pied.vercel.app/",
   },
   {
     project: "AnimeTheque",

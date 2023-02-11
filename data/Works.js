@@ -40,6 +40,11 @@ const Supabase = {
   link: "https://supabase.com/",
 };
 
+const Stripe = {
+  img: "https://play-lh.googleusercontent.com/2PS6w7uBztfuMys5fgodNkTwTOE6bLVB2cJYbu5GHlARAK36FzO5bUfMDP9cEJk__cE",
+  link: "https://stripe.com/",
+};
+
 export const data = [
   {
     project: "Netflim",
@@ -53,7 +58,7 @@ export const data = [
     about:
       "Started this project to learn more about databases (with supabase) page routing with DynamicRoutes and Global States in a ReactApp",
     img: "/Audiophile.png",
-    techno: [React, tailwind, Typescript, ReactRouter, Redux, Supabase],
+    techno: [React, tailwind, Typescript, ReactRouter, Redux, Supabase, Stripe],
     source: "https://github.com/Blazrr/audiophile",
     link: "https://audiophile-pied.vercel.app/",
   },

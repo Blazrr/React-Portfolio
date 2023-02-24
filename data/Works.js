@@ -52,6 +52,8 @@ export const data = [
       "Started this project to learn more about Backend with supabase, This project is still in Build but can be shown if requested",
     img: "/Netflim.png",
     techno: [React, Redux, ReactRouter, Supabase],
+    source: "https://netflims.vercel.app/",
+    link: "https://github.com/Blazrr/Netflims",
   },
   {
     project: "Audiophile",
@@ -62,15 +64,15 @@ export const data = [
     source: "https://github.com/Blazrr/audiophile",
     link: "https://audiophile-pied.vercel.app/",
   },
-  {
-    project: "AnimeTheque",
-    about:
-      "This project is about a library for Animes. I've done this project to test my API skills and discover new Libraries like ChakraUI and TailwindCSS",
-    img: "/AnimeLooker.png",
-    techno: [React, tailwind, chakraUI],
-    source: "https://github.com/Blazrr/chakraproject",
-    link: "https://loquacious-swan-968bf3.netlify.app/",
-  },
+  // {
+  //   project: "AnimeTheque",
+  //   about:
+  //     "This project is about a library for Animes. I've done this project to test my API skills and discover new Libraries like ChakraUI and TailwindCSS",
+  //   img: "/AnimeLooker.png",
+  //   techno: [React, tailwind, chakraUI],
+  //   source: "https://github.com/Blazrr/chakraproject",
+  //   link: "https://loquacious-swan-968bf3.netlify.app/",
+  // },
 
   {
     project: "Netflix Front Part",
@@ -81,14 +83,14 @@ export const data = [
     source: "https://github.com/Blazrr/Netflix",
     link: "https://netflix-front-beta.vercel.app/",
   },
-  {
-    project: "Overwatch site",
-    about: "Started this project in order to learn more about Animation and 3D",
-    img: "/ow.png",
-    techno: [NextJs, Typescript, tailwind, ThreeJs],
-    source: "https://github.com/Blazrr/overwatch",
-    link: "https://overwatch-opaxgbkd3-blazrr.vercel.app/",
-  },
+  // {
+  //   project: "Overwatch site",
+  //   about: "Started this project in order to learn more about Animation and 3D",
+  //   img: "/ow.png",
+  //   techno: [NextJs, Typescript, tailwind, ThreeJs],
+  //   source: "https://github.com/Blazrr/overwatch",
+  //   link: "https://overwatch-opaxgbkd3-blazrr.vercel.app/",
+  // },
   {
     project: "SneakersVue",
     about:
